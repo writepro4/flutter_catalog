@@ -21,10 +21,10 @@ import 'routes/appbar_search_ex.dart';
 import 'routes/appbar_sliver_appbar_ex.dart';
 import 'routes/charts_pie_chart_ex.dart';
 import 'routes/charts_time_series_ex.dart';
-import 'routes/firebase_chatroom_ex.dart';
-import 'routes/firebase_login_ex.dart';
-import 'routes/firebase_mlkit_ex.dart';
-import 'routes/firebase_vote_ex.dart';
+// import 'routes/firebase_chatroom_ex.dart';
+// import 'routes/firebase_login_ex.dart';
+// import 'routes/firebase_mlkit_ex.dart';
+// import 'routes/firebase_vote_ex.dart';
 import 'routes/layouts_container_padding_center_ex.dart';
 import 'routes/layouts_expanded_ex.dart';
 import 'routes/layouts_row_col_ex.dart';
@@ -777,52 +777,52 @@ const kMyAppRoutesAdvanced = <MyRouteGroup>[
           links: {'Hacker News API': 'https://github.com/HackerNews/API'},
         ),
       ]),
-  MyRouteGroup(
-    groupName: 'Firebase',
-    icon: Icon(Icons.cloud),
-    routes: <MyRoute>[
-      MyRoute(
-        child: FirebaseLoginExample(),
-        sourceFilePath: 'lib/routes/firebase_login_ex.dart',
-        title: 'Firebase login',
-        description: 'Google/Anonymous sign in.',
-        links: {
-          'Youtube video': 'https://www.youtube.com/watch?v=JYCNvWKF7vw',
-        },
-      ),
-      MyRoute(
-        child: FirebaseVoteExample(),
-        sourceFilePath: 'lib/routes/firebase_vote_ex.dart',
-        title: 'Firestore voting app',
-        description: 'Vote for your favorite programming language!',
-        links: {
-          'Youtube video': 'https://www.youtube.com/watch?v=DqJ_KjFzL9I',
-          'Codelab':
-              'https://codelabs.developers.google.com/codelabs/flutter-firebase/#0',
-        },
-      ),
-      MyRoute(
-        child: FirebaseChatroomExample(),
-        sourceFilePath: 'lib/routes/firebase_chatroom_ex.dart',
-        title: 'Chat room',
-        description: 'Chat room with firebase realtime db.',
-        links: {
-          'FriendlyChat codelab':
-              'https://github.com/flutter/friendlychat-steps',
-          "Google I/O'17 video": 'https://www.youtube.com/watch?v=w2TcYP8qiRI',
-        },
-      ),
-      MyRoute(
-        child: FirebaseMLKitExample(),
-        sourceFilePath: 'lib/routes/firebase_mlkit_ex.dart',
-        title: 'Firebase ML Kit',
-        description: 'Image labelling, text OCR, barcode scan, face detection.',
-        links: {
-          'Doc': 'https://pub.dartlang.org/packages/firebase_ml_vision',
-        },
-      ),
-    ],
-  ),
+  // MyRouteGroup(
+  //   groupName: 'Firebase',
+  //   icon: Icon(Icons.cloud),
+  //   routes: <MyRoute>[
+  //     MyRoute(
+  //       child: FirebaseLoginExample(),
+  //       sourceFilePath: 'lib/routes/firebase_login_ex.dart',
+  //       title: 'Firebase login',
+  //       description: 'Google/Anonymous sign in.',
+  //       links: {
+  //         'Youtube video': 'https://www.youtube.com/watch?v=JYCNvWKF7vw',
+  //       },
+  //     ),
+  //     MyRoute(
+  //       child: FirebaseVoteExample(),
+  //       sourceFilePath: 'lib/routes/firebase_vote_ex.dart',
+  //       title: 'Firestore voting app',
+  //       description: 'Vote for your favorite programming language!',
+  //       links: {
+  //         'Youtube video': 'https://www.youtube.com/watch?v=DqJ_KjFzL9I',
+  //         'Codelab':
+  //             'https://codelabs.developers.google.com/codelabs/flutter-firebase/#0',
+  //       },
+  //     ),
+  //     MyRoute(
+  //       child: FirebaseChatroomExample(),
+  //       sourceFilePath: 'lib/routes/firebase_chatroom_ex.dart',
+  //       title: 'Chat room',
+  //       description: 'Chat room with firebase realtime db.',
+  //       links: {
+  //         'FriendlyChat codelab':
+  //             'https://github.com/flutter/friendlychat-steps',
+  //         "Google I/O'17 video": 'https://www.youtube.com/watch?v=w2TcYP8qiRI',
+  //       },
+  //     ),
+  //     MyRoute(
+  //       child: FirebaseMLKitExample(),
+  //       sourceFilePath: 'lib/routes/firebase_mlkit_ex.dart',
+  //       title: 'Firebase ML Kit',
+  //       description: 'Image labelling, text OCR, barcode scan, face detection.',
+  //       links: {
+  //         'Doc': 'https://pub.dartlang.org/packages/firebase_ml_vision',
+  //       },
+  //     ),
+  //   ],
+  // ),
 ];
 
 final kAllRouteGroups = <MyRouteGroup>[
