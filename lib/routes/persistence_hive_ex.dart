@@ -1,4 +1,5 @@
 import 'package:english_words/english_words.dart' as english_words;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -56,9 +57,11 @@ class _HiveExampleState extends State<HiveExample> {
   // Initializes the hive DB, once done the hive operations are *synchronous*.
   Future<bool> _initDb() async {
     // Initialize hive.
-    final dir = await path_provider.getApplicationDocumentsDirectory();
-    final hiveFolder = join(dir.path, kHiveFolder);
-    Hive.init(hiveFolder);
+    if (!kIsWeb) {
+      final dir = await path_provider.getApplicationDocumentsDirectory();
+      final hiveFolder = join(dir.path, kHiveFolder);
+      Hive.init(hiveFolder);
+    }
     try {
       // Normally we should register this at the app startup (i.e. in main.dart),
       // putting it here might cuase the line to run twice and lead to errors
