@@ -1,5 +1,16 @@
 # Flutter Catalog
 
+------
+
+Flutter Catalog 한국 번역 버전입니다.
+
+기존 nav바 메뉴를 Front / BackEnd / Bookmarks 로 수정하였으며
+
+기존에 있던 예제를 더 보강하였습니다. 
+
+
+-----
+
 <a href='https://play.google.com/store/apps/details?id=io.github.x_wei.flutter_catalog'>
   <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='200'/>
 </a>
